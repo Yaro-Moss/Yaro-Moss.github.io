@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>亚罗.莫斯(Yaro.Moss)</title>
-        <link>https://yaro-moss.github.io/</link>
-        <description>Recent content on 亚罗.莫斯(Yaro.Moss)</description>
+        <title>C&#43;&#43; on 亚罗.莫斯(Yaro.Moss)</title>
+        <link>https://yaro-moss.github.io/categories/c&#43;&#43;/</link>
+        <description>Recent content in C&#43;&#43; on 亚罗.莫斯(Yaro.Moss)</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>亚罗.莫斯(Yaro.Moss)</copyright>
-        <lastBuildDate>Wed, 31 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yaro-moss.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 31 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yaro-moss.github.io/categories/c++/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>C&#43;&#43; 程序内存分布</title>
         <link>https://yaro-moss.github.io/p/c-program-memory-distribution/</link>
         <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
@@ -298,86 +298,6 @@
 &lt;li&gt;所有C++内存相关问题（内存泄漏、栈溢出、野指针、段错误、内存乱码），本质都是「内存分区的特性不匹配」导致的，吃透6大分区的规则，所有内存问题迎刃而解。&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        </item>
-        <item>
-        <title>文章标题（必填）</title>
-        <link>https://yaro-moss.github.io/p/article-slug-url/</link>
-        <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://yaro-moss.github.io/p/article-slug-url/</guid>
-        <description>&lt;img src="https://yaro-moss.github.io/images/cover.jpg" alt="Featured image of post 文章标题（必填）" /&gt;&lt;h2 id=&#34;引言可选但强烈推荐&#34;&gt;引言（可选但强烈推荐）
-&lt;/h2&gt;&lt;p&gt;这里用 1–2 段话说明：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;这篇文章讲什么&lt;/li&gt;
-&lt;li&gt;为什么值得看&lt;/li&gt;
-&lt;li&gt;适合什么人&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;正文一级结构h2&#34;&gt;正文一级结构（H2）
-&lt;/h2&gt;&lt;p&gt;这里开始写你的正文内容。&lt;/p&gt;
-&lt;h3 id=&#34;正文二级结构h3&#34;&gt;正文二级结构（H3）
-&lt;/h3&gt;&lt;p&gt;继续细分内容。&lt;/p&gt;
-&lt;h4 id=&#34;正文三级结构h4一般很少用&#34;&gt;正文三级结构（H4，一般很少用）
-&lt;/h4&gt;&lt;p&gt;尽量不要超过 H3，太深可读性会下降。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;总结可选&#34;&gt;总结（可选）
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;总结要点&lt;/li&gt;
-&lt;li&gt;给结论或建议&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        <item>
-        <title>归档|Archive</title>
-        <link>https://yaro-moss.github.io/archives/</link>
-        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://yaro-moss.github.io/archives/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>关于|About</title>
-        <link>https://yaro-moss.github.io/%E5%85%B3%E4%BA%8Eabout/</link>
-        <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://yaro-moss.github.io/%E5%85%B3%E4%BA%8Eabout/</guid>
-        <description>&lt;p&gt;Written in Go, Hugo is an open source static site generator available under the &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Apache License 2.0.&lt;/a&gt; Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&lt;/p&gt;
-&lt;p&gt;Hugo makes use of a variety of open source projects including:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yuin/goldmark&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/yuin/goldmark&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/alecthomas/chroma&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/alecthomas/chroma&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/muesli/smartcrop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/muesli/smartcrop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/spf13/cobra&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/spf13/cobra&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/spf13/viper&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/spf13/viper&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.&lt;/p&gt;
-&lt;p&gt;Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.&lt;/p&gt;
-&lt;p&gt;Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.&lt;/p&gt;
-&lt;p&gt;Learn more and contribute on &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>技术链接|Links</title>
-        <link>https://yaro-moss.github.io/%E6%8A%80%E6%9C%AF%E9%93%BE%E6%8E%A5links/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://yaro-moss.github.io/%E6%8A%80%E6%9C%AF%E9%93%BE%E6%8E%A5links/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>搜索|search</title>
-        <link>https://yaro-moss.github.io/search/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://yaro-moss.github.io/search/</guid>
-        <description></description>
         </item>
         
     </channel>
