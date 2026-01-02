@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://yaro-moss.github.io/tags/c/c&#43;&#43;/'>
 
-<link rel="stylesheet" href="/scss/style.min.81579ea678e30582aa60028bfe3192821d6c0fee666ee279be318fb5b558916b.css"><meta property='og:title' content="Tag: C/C++ - 亚罗.莫斯(Yaro.Moss)">
+<link rel="stylesheet" href="/scss/style.min.21a4fbaa52c88cbbb1e535ff20ea95c2d356a419af6b73e3c62a1d9074929760.css"><meta property='og:title' content="Tag: C/C++ - 亚罗.莫斯(Yaro.Moss)">
 <meta property='og:description' content="欢迎来到我的网站">
 <meta property='og:url' content='https://yaro-moss.github.io/tags/c/c&#43;&#43;/'>
 <meta property='og:site_name' content='亚罗.莫斯(Yaro.Moss)'>
@@ -537,5 +537,222 @@
 </script>
 
 
+
+
+<style>
+     
+    body {
+        background: url(https://yaro-moss.github.io/background/bg.png) no-repeat center top;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: #ffffff;
+        position: relative;
+    }
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.50);
+        z-index: -1;
+    }
+    [data-scheme="dark"] body {
+        background-color: #1a1a1a;
+    }
+    [data-scheme="dark"] body::before {
+        background-color: rgba(26, 26, 26, 0.9);
+    }
+
+     
+    #TableOfContents > ul ul,
+    #TableOfContents > ul ol,
+    #TableOfContents > ol ul,
+    #TableOfContents > ol ol {
+        display: none;
+    }
+    #TableOfContents > ul .open,
+    #TableOfContents > ol .open {
+        display: block;
+    }
+
+     
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        right: 20px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://yaro-moss.github.io/icons/backTop.svg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.8;
+        transition: opacity 0.2s ease;
+	border: none;
+        background-color: transparent;
+    }
+    #backTopBtn:hover {
+        opacity: 1;
+    }
+
+     
+    .highlight {
+        max-height: 400px;
+        overflow: hidden;
+        position: relative;
+        transition: max-height 0.3s ease-in-out;
+    }
+    .code-show {
+        max-height: 9999px !important;
+    }
+    .code-more-box {
+        width: 100%;
+        padding-top: 78px;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#fff));
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        transition: all 0.3s ease;
+    }
+    [data-scheme="dark"] .code-more-box {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#1a1a1a));
+    }
+    .code-more-btn {
+        display: block;
+        margin: auto;
+        width: 44px;
+        height: 22px;
+        background: #f0f0f5;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+        padding-top: 6px;
+        cursor: pointer;
+        opacity: 0.8;
+        transition: opacity 0.2s ease;
+    }
+    .code-more-btn:hover {
+        opacity: 1;
+    }
+    [data-scheme="dark"] .code-more-btn {
+        background: #333;
+    }
+    .code-more-img {
+        cursor: pointer !important;
+        display: block;
+        margin: auto;
+        width: 22px;
+        height: 16px;
+        transition: transform 0.2s ease;
+    }
+    .code-more-img-fold {
+        transform: rotate(180deg);
+    }
+</style>
+
+<script>
+    
+    const codeMoreIconUrl = "https://yaro-moss.github.io/icons/codeMore.svg";
+    const backTopIconUrl = "https://yaro-moss.github.io/icons/backTop.svg";
+
+    
+    function initTocHide() {
+        let toc = document.querySelector(".widget--toc");
+        if (!toc) return;
+        window.addEventListener('scroll', function() {
+            let openUl = document.querySelectorAll(".open");
+            openUl.forEach(ul => ul.classList.remove("open"));
+            
+            let currentLi = document.querySelector(".active-class");
+            if (!currentLi) return;
+
+            if (currentLi.children.length > 1) {
+                currentLi.children[1].classList.add("open");
+            }
+
+            let ul = currentLi.parentElement;
+            do {
+                ul.classList.add("open");
+                ul = ul.parentElement?.parentElement;
+            } while (ul && (ul.localName === 'ul' || ul.localName === 'ol'));
+        });
+    }
+
+    
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) return;
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop;
+        btn.style.backgroundImage = "url(" + backTopIconUrl + ")";
+        rightSideBar.appendChild(btn);
+        
+        window.addEventListener('scroll', function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        });
+    }
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    
+    function initCodeMoreBox() {
+        let codeBlocks = document.querySelectorAll(".highlight");
+        if (!codeBlocks || codeBlocks.length === 0) return;
+
+        codeBlocks.forEach(codeBlock => {
+            if (codeBlock.scrollHeight <= codeBlock.clientHeight) return;
+            
+            let codeMoreBox = document.createElement('div');
+            codeMoreBox.classList.add('code-more-box');
+            let codeMoreBtn = document.createElement('span');
+            codeMoreBtn.classList.add('code-more-btn');
+            let img = document.createElement('img');
+            img.classList.add('code-more-img');
+            img.src = codeMoreIconUrl;
+            
+            codeMoreBtn.addEventListener('click', () => {
+                codeBlock.classList.toggle('code-show');
+                const isExpanded = codeBlock.classList.contains('code-show');
+                img.classList.toggle('code-more-img-fold', isExpanded);
+                window.dispatchEvent(new Event('resize'));
+            });
+
+            codeMoreBtn.appendChild(img);
+            codeMoreBox.appendChild(codeMoreBtn);
+            codeBlock.appendChild(codeMoreBox);
+        });
+    }
+
+    
+    let sakuraIsLoaded = false;
+    function initSakura() {
+        if (sakuraIsLoaded) return;
+        const sakuraScript = document.createElement('script');
+        sakuraScript.src = "https://yaro-moss.github.io/background/sakura.js";
+        sakuraScript.onload = () => { sakuraIsLoaded = true; };
+        document.body.appendChild(sakuraScript);
+    }
+
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        initTocHide();
+        initScrollTop();
+        initCodeMoreBox();
+        initSakura(); 
+    });
+</script>
     </body>
 </html>
